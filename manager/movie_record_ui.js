@@ -10,9 +10,11 @@
 
 $(document).ready(function() {
   setTimeout(function() {
-    $('#monitor-bottom').hide();
-    $('.manager-discord-widget, .darkmode-toggle').hide();
-    $('#app-container > div.page-container > div.page-content-wrapper > div > div > div:nth-child(3) > div > div.col-md-4.col-sm-12 > div.note.note-info').hide();
-    $('#app-container > div.page-container > div.page-content-wrapper > div > div > div:nth-child(3) > div > div.col-md-8.col-sm-12 > div > div > ng-include > div:nth-child(2)').hide();
+    $('#navbar-collapse-manager > div').hide(); // extend contract (sidebar)
+    $('#header').hide(); // header
+    $('#monitor-bottom').hide(); // live console on botom
+    $('.manager-discord-widget, .darkmode-toggle').hide(); // discord widget + darkmode widget
+    $('#app-container > div.page-container > div.page-content-wrapper > div > div > div:nth-child(3) > div > div.col-md-4.col-sm-12 > div.note.note-info').hide(); // topserveur
+    $('#app-container > div.page-container > div.page-content-wrapper > div > div > div:nth-child(3) > div > div.col-md-8.col-sm-12 > div > div > ng-include > div:nth-child(2)').hide(); // howto (text)
   }, 5000);
 });
